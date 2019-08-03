@@ -7,6 +7,14 @@ router.post('/newUser', function(req, res, next) {
     database.createNewUser(req, res, next);
 });
 
+router.post('/newFamilyMember', function(req, res, next) {
+    database.createNewFamilyMember(req, res, next);
+});
+
+router.post('/newPhysician', function(req, res, next) {
+    database.createNewPhysician(req, res, next);
+});
+
 router.post('/login', function(req, res, next) {
     database.authenticateUser(req, res, next);
 });
